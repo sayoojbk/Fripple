@@ -3,6 +3,10 @@ import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
+import ProfileScreen from './screens/ProfileScreen';
+import SearchScreen from './screens/SearchScreen';
+import FeedScreen from './screens/FeedScreen';
+import NotifScreen from './screens/NotifScreen';
 
 
 function DefaultScreen() {
@@ -55,11 +59,11 @@ export default function App() {
           inactiveTintColor: '#5E5757',
         }}
       >
-        <Tab.Screen name="Feed" component={DefaultScreen} />
-        <Tab.Screen name="Search" component={DefaultScreen} />
-        <Tab.Screen name="Add" component={DefaultScreen} />
-        <Tab.Screen name="Notifications" component={DefaultScreen} />
-        <Tab.Screen name="Profile" component={DefaultScreen} />
+        <Tab.Screen name="Feed" component={ FeedScreen } />
+        <Tab.Screen name="Search" component={ SearchScreen } />
+        <Tab.Screen name="Add" component={ DefaultScreen } />
+        <Tab.Screen name="Notifications" component={ NotifScreen } />
+        <Tab.Screen name="Profile" component={ ProfileScreen } />
       </Tab.Navigator>
     </NavigationContainer>
   );
