@@ -7,18 +7,13 @@ import ProfileScreen from './screens/ProfileScreen';
 import SearchScreen from './screens/SearchScreen';
 import FeedScreen from './screens/FeedScreen';
 import NotifScreen from './screens/NotifScreen';
+import EventScreenNav from './screens/EventScreenNav'
 
-
-function DefaultScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Default!</Text>
-    </View>
-  );
-}
 
 
 const Tab = createBottomTabNavigator();
+
+
 
 export default function App() {
   return (
@@ -35,8 +30,8 @@ export default function App() {
               case 'Search':
                 iconName = 'ios-search';
                 break;
-              case 'Add':
-                iconName = 'ios-add-circle';
+              case 'Events':
+                iconName = 'ios-disc';
                 break;
               case 'Notifications':
                 iconName = 'ios-notifications';
@@ -61,10 +56,11 @@ export default function App() {
       >
         <Tab.Screen name="Feed" component={ FeedScreen } />
         <Tab.Screen name="Search" component={ SearchScreen } />
-        <Tab.Screen name="Add" component={ DefaultScreen } />
+        <Tab.Screen name="Events" component={ EventScreenNav } />
         <Tab.Screen name="Notifications" component={ NotifScreen } />
         <Tab.Screen name="Profile" component={ ProfileScreen } />
       </Tab.Navigator>
+      
     </NavigationContainer>
   );
 }
