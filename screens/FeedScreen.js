@@ -6,13 +6,12 @@ export default function App() {
   let Image_Http_URL ={uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'}
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.rect2Stack}>
         <View style={styles.rect2}>
           <Image
             source={require("../assets/images/logo.png")}
             // source={{Image_Http_URL}}
             resizeMode="contain"
-            style={styles.image}
+            style={styles.logo}
           ></Image>
         </View>
         <View style={styles.rect}>
@@ -38,7 +37,6 @@ export default function App() {
             ></Image>
           </View>
         </View>
-      </View>
     </SafeAreaView>
   );
 }
@@ -59,20 +57,20 @@ const styles = StyleSheet.create({
   rect2: {
     top: 0,
     left: 0,
-    width: 381,
+    width: '100%',
     height: 176,
     position: "absolute",
     backgroundColor: "rgba(114,105,105,1)"
   },
-  image: {
-    width: 151,
-    height: 165,
+  logo: {
+    width: '30%',
+    height: '100%',
     marginTop: 11
   },
   rect: {
     top: 145,
     left: 0,
-    width: 375,
+    width: '100%',
     height: 667,
     position: "absolute",
     backgroundColor: "rgba(255,255,255,1)",
@@ -80,7 +78,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 30
   },
   yourFeed: {
-    fontFamily: "OpenSans",
+    fontFamily: "Roboto",
     color: "#121212",
     fontSize: 16,
     marginTop: 31,
@@ -94,12 +92,12 @@ const styles = StyleSheet.create({
     borderRadius: 100
   },
   insiyahHajoori: {
-    fontFamily: "OpenSans",
+    fontFamily: "Roboto",
     color: "#121212",
     fontSize: 16
   },
   artDirAtKatvi: {
-    fontFamily: "OpenSans",
+    fontFamily: "Roboto",
     color: "rgba(101,93,93,1)",
     marginTop: 5
   },
@@ -128,9 +126,5 @@ const styles = StyleSheet.create({
     height: 165,
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30
-  },
-  rect2Stack: {
-    width: 381,
-    height: 812
   }
 });

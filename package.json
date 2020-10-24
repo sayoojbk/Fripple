@@ -31,8 +31,8 @@
   },
   "private": true,
   "rnpm": {
-    "assets":[
+    "assets": [
       "./assets/fonts/"
     ]
-  },
+  }
 }
