@@ -2,9 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView , View, Image} from 'react-native';
 // import { Card, ListItem, Button, Icon } from 'react-native-elements'
-// import { PostCard} from '../components/card_info';
-// import {VerticalScreen} from '../components/feedCard/feedCardList'
-import FeedCardList from '../components/feedCard/FeedCardList';
+import  FeedCardList from '../components/feedCard/FeedCardList';
 import EventCardList from '../components/eventScreenComponents/EventCardList';
 
 const user_posts= [
@@ -20,6 +18,7 @@ const user_posts= [
   }
 ]
 export default function App() {
+  let Image_Http_URL ={uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'}
   return (
     <SafeAreaView style={styles.container}>
         <View style={styles.rect2}>
@@ -30,10 +29,28 @@ export default function App() {
             style={styles.logo}
           ></Image>
         </View>
-
-        {/* <VerticalScreen />         */}
-        {/* <EventCardList /> */}
-        <FeedCardList/>
+        {/* <View style={styles.rect}>
+          <Text style={styles.yourFeed}>Your Feed</Text>
+        </View> */}
+        <View style={styles.rect}>
+          {/* <View style={styles.image2Row}>
+            <Image
+              // source={require("../assets/images/photo-1438761681033-6461ffad8d80_(1).jpeg")}
+              source={require("../assets/images/logo.png")}
+              resizeMode="cover"
+              style={styles.image2}
+            ></Image>
+            <View style={styles.insiyahHajooriColumn}>
+              <Text style={styles.insiyahHajoori}>Insiyah Hajoori</Text>
+              <Text style={styles.artDirAtKatvi}>Art Dir at Katvi</Text>
+            </View>
+          </View> */}
+          {/* <PostCard/> */}
+          {/* <View style={styles.rect3}> */}
+            <FeedCardList/>
+            {/* <EventCardList /> */}
+          {/* </View> */}
+        </View>
     </SafeAreaView>
   );
 }

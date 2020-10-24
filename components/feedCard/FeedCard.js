@@ -29,7 +29,7 @@ export default () => (
           color: "rgb(51, 51, 51)"
         }}
       >
-        Enhance your artistic skills
+        Enhance your khatna skills
       </Text>
     </View>
   </View>
