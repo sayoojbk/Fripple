@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView , View, Image} from 'react-native';
 // import { Card, ListItem, Button, Icon } from 'react-native-elements'
-import { PostCard} from '../components/post_card';
+import { PostCard} from '../components/card_info';
 
 const user_posts= [
   {
@@ -29,30 +29,7 @@ export default function App() {
           ></Image>
         </View>
 
-        <View style={styles.rect}>
-          <Text style={styles.yourFeed}>Your Feed</Text>
-          <View style={styles.image2Row}>
-            <Image
-              // source={require("../assets/images/photo-1438761681033-6461ffad8d80_(1).jpeg")}
-              source={require("../assets/images/logo.png")}
-              resizeMode="cover"
-              style={styles.image2}
-            ></Image>
-            <View style={styles.insiyahHajooriColumn}>
-              <Text style={styles.insiyahHajoori}>Insiyah Hajoori</Text>
-              <Text style={styles.artDirAtKatvi}>Art Dir at Katvi</Text>
-            </View>
-          </View>
-          {/* <PostCard/> */}
-          <View style={styles.rect3}>
-            <Image
-              // source={require("../assets/images/photo-1438761681033-6461ffad8d80_(1)1.jpeg")}
-              source={require("../assets/images/logo.png")}
-              resizeMode="cover"
-              style={styles.image3}
-            ></Image>
-          </View>
-        </View>
+        
     </SafeAreaView>
   );
 }
