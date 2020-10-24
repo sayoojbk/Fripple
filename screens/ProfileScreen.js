@@ -3,6 +3,7 @@ import { StyleSheet, View, Text } from "react-native";
 import Svg, { Ellipse } from "react-native-svg";
 import { Ionicons } from '@expo/vector-icons';
 
+
 function ProfileScreen(props) {
   return (
     <View style={styles.container}>
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 25
   },
   followers500: {
-    fontFamily: "open-sans-600",
+    fontFamily: "Roboto",
     color: "rgba(226,218,218,1)",
     textAlign: "center",
     marginTop: '10%'
@@ -61,7 +62,7 @@ const styles = StyleSheet.create({
     marginLeft: '20%'
   },
   following500: {
-    fontFamily: "open-sans-600",
+    fontFamily: "Roboto",
     color: "rgba(226,218,218,1)",
     textAlign: "center",
     marginLeft: '20%',
@@ -75,14 +76,14 @@ const styles = StyleSheet.create({
     marginRight: 35
   },
   sarahParkar: {
-    fontFamily: "open-sans-600",
+    fontFamily: "Roboto",
     color: "rgba(226,218,218,1)",
     fontSize: 25,
     marginTop: '10%',
     marginLeft: '34%'
   },
   designer: {
-    fontFamily: "open-sans-600",
+    fontFamily: "Roboto",
     color: "rgba(179,170,170,1)",
     fontSize: 15,
     marginTop: '1%',

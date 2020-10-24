@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, SafeAreaView } from 'react-native';
 import { FloatingAction } from "react-native-floating-action";
 import { Ionicons } from '@expo/vector-icons';
-import CardList from "react-native-card-animated-modal";
+import EventCardList from '../components/eventScreenComponents/EventCardList';
  
 
 
@@ -12,6 +12,7 @@ export default function App({ navigation }) {
     // react native cards of events with participate button
   return (
     <SafeAreaView style={styles.container}>
+			<EventCardList />
       <FloatingAction
         floatingIcon={<Ionicons name={'ios-add'} size={30} color={'white'}/>}
         color={'#5E5757'}

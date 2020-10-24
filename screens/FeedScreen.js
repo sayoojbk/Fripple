@@ -1,7 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView , View, Image} from 'react-native';
+// import { Card, ListItem, Button, Icon } from 'react-native-elements'
+import { PostCard} from '../components/card_info';
 
+const user_posts= [
+  {
+    name:'Insi Hajoori',
+    bio:'Art Director at Katvi',
+    img_uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'
+  },
+  {
+    name:'Insi Hajoori',
+    bio:'Art Director at Katvi',
+    img_uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'
+  }
+]
 export default function App() {
   let Image_Http_URL ={uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'}
   return (
@@ -14,29 +28,8 @@ export default function App() {
             style={styles.logo}
           ></Image>
         </View>
-        <View style={styles.rect}>
-          <Text style={styles.yourFeed}>Your Feed</Text>
-          <View style={styles.image2Row}>
-            <Image
-              // source={require("../assets/images/photo-1438761681033-6461ffad8d80_(1).jpeg")}
-              source={require("../assets/images/logo.png")}
-              resizeMode="cover"
-              style={styles.image2}
-            ></Image>
-            <View style={styles.insiyahHajooriColumn}>
-              <Text style={styles.insiyahHajoori}>Insiyah Hajoori</Text>
-              <Text style={styles.artDirAtKatvi}>Art Dir at Katvi</Text>
-            </View>
-          </View>
-          <View style={styles.rect3}>
-            <Image
-              // source={require("../assets/images/photo-1438761681033-6461ffad8d80_(1)1.jpeg")}
-              source={require("../assets/images/logo.png")}
-              resizeMode="cover"
-              style={styles.image3}
-            ></Image>
-          </View>
-        </View>
+
+        
     </SafeAreaView>
   );
 }
