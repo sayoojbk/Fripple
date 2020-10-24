@@ -1,21 +1,126 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import React, { Component } from "react";
+import { StyleSheet, View, Text } from "react-native";
+import Svg, { Ellipse } from "react-native-svg";
+import { Ionicons } from '@expo/vector-icons';
 
-export default function App() {
+function ProfileScreen(props) {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>Profile Screen</Text>
-      <StatusBar style="auto" />
-    </SafeAreaView>
+    <View style={styles.container}>
+        <View style={styles.rect}>
+          <View style={styles.followers500Row}>
+            <Text style={styles.followers500}>Followers{"\n"}500</Text>
+            <Svg viewBox="0 0 82.45 82.45" style={styles.ellipse}>
+              <Ellipse
+                stroke="rgba(230, 230, 230,1)"
+                strokeWidth={0}
+                fill="rgba(230, 230, 230,1)"
+                cx={41}
+                cy={41}
+                rx={41}
+                ry={41}
+              ></Ellipse>
+            </Svg>
+            <Text style={styles.following500}>Following{"\n"}500</Text>
+          </View>
+          <Text style={styles.sarahParkar}>Sarah Parkar</Text>
+          <Text style={styles.designer}>Designer</Text>
+        </View>
+        <View style={styles.rect2}>
+            <Ionicons name="md-flower" size={32} color="#5E5757" style={styles.dkIcon} />
+            <Text style={styles.dkCount}>340</Text>
+            <Ionicons name="md-star" size={32} color="#5E5757" style={styles.ikIcon} />
+            <Text style={styles.ikCount}>220</Text>
+        </View>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#FDFDFD',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex: 1
   },
+  rect: {
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '36%',
+    position: "absolute",
+    backgroundColor: "rgba(94,87,87,1)",
+    borderBottomRightRadius: 25,
+    borderBottomLeftRadius: 25
+  },
+  followers500: {
+    fontFamily: "open-sans-600",
+    color: "rgba(226,218,218,1)",
+    textAlign: "center",
+    marginTop: '10%'
+  },
+  ellipse: {
+    width: 100,
+    height: 100,
+    marginLeft: '20%'
+  },
+  following500: {
+    fontFamily: "open-sans-600",
+    color: "rgba(226,218,218,1)",
+    textAlign: "center",
+    marginLeft: '20%',
+    marginTop: '10%'
+  },
+  followers500Row: {
+    height: 82,
+    flexDirection: "row",
+    marginTop: 71,
+    marginLeft: 31,
+    marginRight: 35
+  },
+  sarahParkar: {
+    fontFamily: "open-sans-600",
+    color: "rgba(226,218,218,1)",
+    fontSize: 25,
+    marginTop: '10%',
+    marginLeft: '34%'
+  },
+  designer: {
+    fontFamily: "open-sans-600",
+    color: "rgba(179,170,170,1)",
+    fontSize: 15,
+    marginTop: '1%',
+    marginLeft: '44%'
+  },
+  rect2: {
+    top: '33%',
+    left: '20%',
+    width: 246,
+    height: 46,
+    position: "absolute",
+    backgroundColor: "#E6E6E6",
+    borderRadius: 50
+  },
+  dkIcon: {
+    top: '15%',
+    left: '8%',
+    position: "absolute",
+  },
+  ikIcon: {
+    top: '15%',
+    right: '8%',
+    position: "absolute",
+  },
+  dkCount: {
+    top: '25%',
+    right: '23%',
+    fontSize: 18,
+    position: "absolute",
+    color: "#5E5757"
+  },
+  ikCount: {
+    top: '25%',
+    left: '23%',
+    fontSize: 18,
+    position: "absolute",
+    color: "#5E5757"
+  }
 });
+
+export default ProfileScreen;
