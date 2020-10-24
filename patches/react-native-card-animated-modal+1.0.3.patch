@@ -1,0 +1,86 @@
+diff --git a/node_modules/react-native-card-animated-modal/src/index.js b/node_modules/react-native-card-animated-modal/src/index.js
+index e9399f2..0ee2f8f 100644
+--- a/node_modules/react-native-card-animated-modal/src/index.js
++++ b/node_modules/react-native-card-animated-modal/src/index.js
+@@ -70,28 +70,34 @@ class Test extends React.Component {
+             Animated.parallel([
+               Animated.spring(this.position.x, {
+                 toValue: dPageX,
+-                duration: 300
++                duration: 300,
++                useNativeDriver: false
+               }),
+               Animated.spring(this.position.y, {
+                 toValue: dPageY,
+-                duration: 300
++                duration: 300,
++                useNativeDriver: false
+               }),
+               Animated.spring(this.dimensions.x, {
+                 toValue: dWidth,
+-                duration: 300
++                duration: 300,
++                useNativeDriver: false
+               }),
+               Animated.spring(this.dimensions.y, {
+                 toValue: dHeight,
+-                duration: 300
++                duration: 300,
++                useNativeDriver: false
+               }),
+               Animated.timing(this.animated, {
+                 toValue: 1,
+-                duration: 300
++                duration: 300,
++                useNativeDriver: false
+               }),
+               Animated.timing(this.detailAnimated, {
+                 toValue: 1,
+                 delay: 100,
+-                duration: 300
++                duration: 300,
++                useNativeDriver: false
+               })
+             ]).start();
+           });
+@@ -109,28 +115,34 @@ class Test extends React.Component {
+         Animated.parallel([
+           Animated.timing(this.position.x, {
+             toValue: this.oldPosition.x,
+-            duration: 300
++            duration: 300,
++            useNativeDriver: false
+           }),
+           Animated.timing(this.position.y, {
+             toValue: this.oldPosition.y,
+             easing: Easing.bezier(0.175, 0.885, 0.32, 1.275),
+-            duration: 300
++            duration: 300,
++            useNativeDriver: false
+           }),
+           Animated.timing(this.dimensions.x, {
+             toValue: this.oldPosition.width,
+-            duration: 300
++            duration: 300,
++            useNativeDriver: false
+           }),
+           Animated.timing(this.dimensions.y, {
+             toValue: this.oldPosition.height,
+-            duration: 300
++            duration: 300,
++            useNativeDriver: false
+           }),
+           Animated.timing(this.animated, {
+             toValue: 0,
+-            duration: 300
++            duration: 300,
++            useNativeDriver: false
+           }),
+           Animated.timing(this.detailAnimated, {
+             toValue: 0,
+-            duration: 100
++            duration: 100,
++            useNativeDriver: false
+           })
+         ]).start(() => {
+           StatusBar.setHidden(false, "slide");
