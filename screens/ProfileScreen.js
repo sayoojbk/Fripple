@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 25
   },
   followers500: {
-    fontFamily: "open-sans-600",
+    fontFamily: "Open Sans",
     color: "rgba(226,218,218,1)",
     textAlign: "center",
     marginTop: '10%'
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     marginLeft: '20%'
   },
   following500: {
-    fontFamily: "open-sans-600",
+    fontFamily: "Open Sans",
     color: "rgba(226,218,218,1)",
     textAlign: "center",
     marginLeft: '20%',
@@ -75,14 +75,14 @@ const styles = StyleSheet.create({
     marginRight: 35
   },
   sarahParkar: {
-    fontFamily: "open-sans-600",
+    fontFamily: "Open Sans",
     color: "rgba(226,218,218,1)",
     fontSize: 25,
     marginTop: '10%',
     marginLeft: '34%'
   },
   designer: {
-    fontFamily: "open-sans-600",
+    fontFamily: "Open Sans",
     color: "rgba(179,170,170,1)",
     fontSize: 15,
     marginTop: '1%',
