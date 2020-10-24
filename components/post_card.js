@@ -65,7 +65,7 @@ export default function PostCard() {
       />
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/paella.jpg"
+        image="../assets/images/logo.png"
         title="Paella dish"
       />
       {/* <CardContent>

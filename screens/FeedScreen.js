@@ -43,7 +43,7 @@ export default function App() {
               <Text style={styles.artDirAtKatvi}>Art Dir at Katvi</Text>
             </View>
           </View>
-          {/* <PostCard></PostCard> */}
+          {/* <PostCard/> */}
           <View style={styles.rect3}>
             <Image
               // source={require("../assets/images/photo-1438761681033-6461ffad8d80_(1)1.jpeg")}
