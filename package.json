@@ -18,6 +18,7 @@
     "@react-navigation/stack": "^5.9.3",
     "expo": "~39.0.2",
     "expo-status-bar": "~1.0.2",
+    "native-base": "^2.13.14",
     "patch-package": "^6.2.2",
     "react": "^17.0.0",
     "react-dom": "16.13.1",
@@ -32,8 +33,10 @@
     "react-native-screens": "~2.10.1",
     "react-native-svg": "^12.1.0",
     "react-native-tab-navigator": "^0.3.4",
+    "react-native-vector-icons": "^7.1.0",
     "react-native-web": "~0.13.12",
-    "react-navigation": "^4.4.2"
+    "react-navigation": "^4.4.2",
+    "expo-font": "~8.3.0"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0"

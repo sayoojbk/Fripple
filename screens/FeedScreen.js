@@ -2,8 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView , View, Image} from 'react-native';
 // import { Card, ListItem, Button, Icon } from 'react-native-elements'
-import  FeedCardList from '../components/feedCard/FeedCardList';
-import EventCardList from '../components/eventScreenComponents/EventCardList';
+import CardImageExample from '../components/feedCard/FeedCard';
 
 const user_posts= [
   {
@@ -47,8 +46,8 @@ export default function App() {
           </View> */}
           {/* <PostCard/> */}
           {/* <View style={styles.rect3}> */}
-            <FeedCardList/>
-            {/* <EventCardList /> */}
+            {/* <FeedCardList/> */}
+            <CardImageExample />
           {/* </View> */}
         </View>
     </SafeAreaView>
