@@ -4,7 +4,7 @@ import { StyleSheet, Text, SafeAreaView , View, Image} from 'react-native';
 // import { Card, ListItem, Button, Icon } from 'react-native-elements'
 import CardImageExample from '../components/feedCard/FeedCard';
 
-const user_posts= [
+let user_posts= [
   {
     name:'Insi Hajoori',
     bio:'Art Director at Katvi',
@@ -12,10 +12,17 @@ const user_posts= [
   },
   {
     name:'Insi Hajoori',
-    bio:'Art Director at Katvi',
+    bio:'Art Director at HOP- HOUSE OF MUH MEH PARATHA',
+    img_uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'
+  },
+  {
+    name:'Insi Hajoori',
+    bio:'Art Director at Khatna ',
     img_uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'
   }
 ]
+
+let userName = 'insi.yeah'
 export default function App() {
   let Image_Http_URL ={uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'}
   return (
@@ -28,40 +35,17 @@ export default function App() {
             style={styles.logo}
           ></Image>
         </View>
-        {/* <View style={styles.rect}>
-          <Text style={styles.yourFeed}>Your Feed</Text>
-        </View> */}
+
         <View style={styles.rect}>
-          {/* <View style={styles.image2Row}>
-            <Image
-              // source={require("../assets/images/photo-1438761681033-6461ffad8d80_(1).jpeg")}
-              source={require("../assets/images/logo.png")}
-              resizeMode="cover"
-              style={styles.image2}
-            ></Image>
-            <View style={styles.insiyahHajooriColumn}>
-              <Text style={styles.insiyahHajoori}>Insiyah Hajoori</Text>
-              <Text style={styles.artDirAtKatvi}>Art Dir at Katvi</Text>
-            </View>
-          </View> */}
-          {/* <PostCard/> */}
-          {/* <View style={styles.rect3}> */}
-            {/* <FeedCardList/> */}
-            <CardImageExample />
-          {/* </View> */}
+         
+            <CardImageExample username={userName}/>
+         
         </View>
     </SafeAreaView>
   );
 }
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#FDFDFD',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });
+
 
 const styles = StyleSheet.create({
   container: {
