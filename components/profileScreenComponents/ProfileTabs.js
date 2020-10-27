@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Tab, Tabs } from 'native-base';
 import { StyleSheet, View, Text, SafeAreaView } from "react-native";
-import PortfolioTab from './tabs/PortfolioTab';
-import CollabTab from './tabs/CollabTab';
-import ProjectsTab from './tabs/ProjectsTab';
+import PortfolioTab from './tabScreens/PortfolioTab';
+import CollabTab from './tabScreens/CollabTab';
+import ProjectsTab from './tabScreens/ProjectsTab';
 
 export default class TabsExample extends Component {
   render() {
     return (
       <Container>
-        <Header hasTabs style={styles.header} noShadow={'true'} />
-        <Tabs>
+        <Header hasTabs style={styles.header} noShadow={true} />
+        <Tabs noShadow={true} locked={true}>
           <Tab heading="Portfolio" 
 							 tabStyle={styles.tabs} 
 							 activeTabStyle={styles.tabs} 
