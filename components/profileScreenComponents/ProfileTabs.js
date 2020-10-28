@@ -10,7 +10,7 @@ export default class TabsExample extends Component {
     return (
       <Container>
         <Header hasTabs style={styles.header} noShadow={true} />
-        <Tabs noShadow={true} locked={true}>
+        <Tabs noShadow={true} locked={true} style={styles.tabs}>
           <Tab heading="Portfolio" 
 							 tabStyle={styles.tabs} 
 							 activeTabStyle={styles.tabs} 
@@ -41,10 +41,14 @@ export default class TabsExample extends Component {
 // TODO: Change fonts and black underline
 const styles = StyleSheet.create({
     header: {
-        backgroundColor: 'rgba(230, 230, 230,1)'
+        backgroundColor: '#FDFDFD',
+        shadowColor: "#FDFDFD",
+        elevation: 0
     },
     tabs: {
-        backgroundColor: 'rgba(230, 230, 230,1)'
+        backgroundColor: '#FDFDFD',
+        shadowColor: "#FDFDFD",
+        elevation: 0
     },
     activeText: {
         color: 'black'

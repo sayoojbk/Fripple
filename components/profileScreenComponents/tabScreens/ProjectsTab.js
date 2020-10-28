@@ -4,18 +4,22 @@ import { StyleSheet, Text, SafeAreaView } from 'react-native';
 import ProfileCard from '../cards/ProfileCard'
 import Carousel from 'react-native-snap-carousel';
 
+
 const data = [{
   uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg',
-  title: 'Designer',
+  designation: 'Designer',
+  title: "First post",
   username: 'Sarah Parker'
 },{
   uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg',
-  title: 'Designer',
+  designation: 'Designer',
+  title: "Second post",
   username: 'Sarah Parker'
 }]
 
 export default function ProjectsTab() {
   return (
+    
     <Carousel
       // ref={(c) => { this._carousel = c; }}
       layout={'stack'} 
@@ -25,6 +29,7 @@ export default function ProjectsTab() {
       sliderWidth={400}
       itemWidth={400}
     />
+
   );
 }
 

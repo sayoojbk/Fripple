@@ -22,7 +22,7 @@
     "impagination": "^1.0.0",
     "native-base": "^2.13.14",
     "patch-package": "^6.2.2",
-    "react": "^17.0.0",
+    "react": "^16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.4.tar.gz",
     "react-native-card-animated-modal": "^1.0.3",

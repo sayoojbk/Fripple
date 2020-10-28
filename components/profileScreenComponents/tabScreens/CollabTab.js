@@ -6,14 +6,15 @@ import Carousel from 'react-native-snap-carousel';
 
 const data = [{
   uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg',
-  title: 'Designer',
+  designation: 'Designer',
+  title: "First post",
   username: 'Sarah Parker'
 },{
   uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg',
-  title: 'Designer',
+  designation: 'Designer',
+  title: "Second post",
   username: 'Sarah Parker'
 }]
-
 
 export default function CollabTab() {
   return (
