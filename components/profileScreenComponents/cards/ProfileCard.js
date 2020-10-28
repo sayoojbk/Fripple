@@ -103,7 +103,6 @@ export default function ProfileCard({item, index}) {
               </Stack.Screen>
           </Stack.Navigator>
         </NavigationContainer>
-        {/* <MyCard item={item} index={index}/> */}
         
       </Container>
   );

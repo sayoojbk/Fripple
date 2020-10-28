@@ -39,6 +39,7 @@ export default class TabsExample extends Component {
 }
 
 // TODO: Change fonts and black underline
+// TODO: Reduce width of card and height of brown item
 const styles = StyleSheet.create({
     header: {
         backgroundColor: '#FDFDFD',
