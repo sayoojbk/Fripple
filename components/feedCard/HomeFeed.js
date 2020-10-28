@@ -28,9 +28,9 @@ const Home = () => {
     // <SafeAreaView style={styles.container}>
       <ScrollView
         contentContainerStyle={styles.scrollView}
-        refreshControl={
-          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
-        }
+        // refreshControl={
+        //   <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+        // }
       >
         {/* <Text>Pull down to see RefreshControl indicator</Text> */}
         <DemoCard/>
