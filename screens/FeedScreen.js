@@ -3,6 +3,8 @@ import React from 'react';
 import { StyleSheet, Text, SafeAreaView , View, Image} from 'react-native';
 // import { Card, ListItem, Button, Icon } from 'react-native-elements'
 import CardImageExample from '../components/feedCard/FeedCard';
+import Home from '../components/feedCard/HomeFeed';
+import DemoCard from '../components/feedCard/DemoCard';
 
 let user_posts= [
   {
@@ -24,10 +26,10 @@ let user_posts= [
 
 let userName = 'insi.yeah'
 export default function App() {
-  let Image_Http_URL ={uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'}
+  // let Image_Http_URL ={uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'}
   return (
     <SafeAreaView style={styles.container}>
-        <View style={styles.rect2}>
+        <View style={styles.logobanner}>
           <Image
             source={require("../assets/images/logo.png")}
             // source={{Image_Http_URL}}
@@ -36,11 +38,15 @@ export default function App() {
           ></Image>
         </View>
 
-        <View style={styles.rect}>
-         
+        {/* <View style={styles.rect}>
             <CardImageExample username={userName}/>
-         
-        </View>
+        </View> */}
+        {/* <View style={styles.rect3}> */}
+          <Home/>
+          {/* <DemoCard/> */}
+        {/* </View> */}
+        
+
     </SafeAreaView>
   );
 }
@@ -51,13 +57,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   },
-  rect2: {
+  logobanner : {
     top: 0,
     left: 0,
     width: '100%',
-    height: 176,
+    height: '20%',
     position: "absolute",
-    backgroundColor: "rgba(114,105,105,1)"
+    backgroundColor: "rgba(114,105,105,1)",
   },
   logo: {
     width: '30%',
@@ -81,42 +87,14 @@ const styles = StyleSheet.create({
     marginTop: 31,
     marginLeft: 48
   },
-  image2: {
-    width: 50,
-    height: 50,
-    borderWidth: 0,
-    borderColor: "#000000",
-    borderRadius: 100
-  },
-  insiyahHajoori: {
-    fontFamily: "Roboto",
-    color: "#121212",
-    fontSize: 16
-  },
-  artDirAtKatvi: {
-    fontFamily: "Roboto",
-    color: "rgba(101,93,93,1)",
-    marginTop: 5
-  },
-  insiyahHajooriColumn: {
-    width: 107,
-    marginLeft: 17,
-    marginBottom: 9
-  },
-  image2Row: {
-    height: 50,
-    flexDirection: "row",
-    marginTop: 17,
-    marginLeft: 48,
-    marginRight: 153
-  },
   rect3: {
-    width: 271,
-    height: 204,
-    backgroundColor: "rgba(114,105,105,1)",
-    borderRadius: 30,
-    marginTop: 7,
-    marginLeft: 48
+    width: '100%',
+    height: '100%',
+    // backgroundColor: "rgba(114,105,105,1)",
+    backgroundColor:'white',
+    marginTop: '30%',
+    borderTopLeftRadius: 30, 
+    borderTopRightRadius: 30
   },
   image3: {
     width: 271,
@@ -124,4 +102,11 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30
   }
+  ,
+  scrollView: {
+    // flex: 1,
+    backgroundColor: 'pink',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,Alert  } from 'react';
 import { Image } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base';
 
@@ -23,6 +23,26 @@ const userData = [
 ]
 
 export default class CardImageExample extends Component {
+
+  constructor(props) {
+    super(props);
+    this.function_call = this.function_call.bind(this);
+  }
+  function_call() {
+    // Alert.alert(
+    //   "Alert Title",
+    //   "My Alert Msg",
+    //   [
+    //     {
+    //       text: "Cancel",
+    //       onPress: () => console.log("Cancel Pressed"),
+    //       style: "cancel"
+    //     },
+    //     { text: "OK", onPress: () => console.log("OK Pressed") }
+    //   ],
+    //   { cancelable: false }
+    // );
+  }
   render(props) {
     return (
       <Container style={{backgroundColor:'#FFFFFF'}} >
@@ -38,7 +58,7 @@ export default class CardImageExample extends Component {
                 </Body>
               </Left>
             </CardItem>
-            <CardItem cardBody >
+            <CardItem button onPress={this.function_call} cardBody >
               <Image source={{uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg'}} style={{height: 200, width: null, flex: 1}}/>
             </CardItem>
             <CardItem header bordered style={{ backgroundColor:"#e2dada",height:'15%',  borderBottomLeftRadius:30,borderBottomRightRadius:30 }}>
