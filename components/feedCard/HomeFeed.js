@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import Constants from 'expo-constants';
 import DemoCard from '../feedCard/DemoCard';
+import { Left } from 'native-base';
 
 const wait = (timeout) => {
   return new Promise(resolve => {
@@ -32,6 +33,7 @@ const Home = () => {
         //   <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         // }
       >
+        <Text style={[styles.titleText, {textAlign: 'left'}]}>Your Feed</Text>
         {/* <Text>Pull down to see RefreshControl indicator</Text> */}
         <DemoCard/>
       </ScrollView>
@@ -54,6 +56,15 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 30, 
     borderTopRightRadius: 30
   },
+  titleText:{
+    fontFamily:'Roboto',
+    marginTop:20,
+    width:'100%',
+    // textAlign:'left',
+    marginLeft:50,
+    fontSize: 20,
+    fontWeight: "bold"
+  }
 });
 
 export default Home;
