@@ -5,37 +5,31 @@ import { StyleSheet, Text, SafeAreaView , View, Image} from 'react-native';
 import CardImageExample from '../components/feedCard/FeedCard';
 import Home from '../components/feedCard/HomeFeed';
 import DemoCard from '../components/feedCard/DemoCard';
+import { Container, Header, Content, Card, CardItem, Thumbnail,  Button, Icon, Left, Body, Right } from 'native-base';
 
-let user_posts= [
-  {
-    name:'Insi Hajoori',
-    bio:'Art Director at Katvi',
-    img_uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'
-  },
-  {
-    name:'Insi Hajoori',
-    bio:'Art Director at HOP- HOUSE OF MUH MEH PARATHA',
-    img_uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'
-  },
-  {
-    name:'Insi Hajoori',
-    bio:'Art Director at Khatna ',
-    img_uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'
-  }
-]
+
 
 let userName = 'insi.yeah'
 export default function App() {
   // let Image_Http_URL ={uri:'https://dvyvvujm9h0uq.cloudfront.net/com/articles/1514474020-tips-for-aspiring-fashion-models.jpg'}
   return (
     <SafeAreaView style={styles.container}>
+
+        
         <View style={styles.logobanner}>
           <Image
             source={require("../assets/images/logo.png")}
             // source={{Image_Http_URL}}
             resizeMode="contain"
             style={styles.logo}
-          ></Image>
+          >
+          </Image>
+
+          
+            <Button transparent>
+              <Icon active name="share" />
+            </Button>
+  
         </View>
 
         {/* <View style={styles.rect}>

@@ -27,10 +27,10 @@ export default  class DemoCard extends Component {
     //     // }
     //   >
       <Container style={styles.container}>
-        <Content style={{width:'100%', alignSelf:'center', paddingTop:'5%'}}>
+        <Content style={{width:'100%', alignSelf:'center', paddingTop:'5%', elevation:0}}>
         {this.state.DATA.map((item, index) => {
           return(
-            <Card key={index} style={{ alignSelf:'center',width:'75%', borderRadius: 30 ,marginBottom:20}}>
+            <Card key={index} style={{ alignSelf:'center',width:'75%', borderRadius: 30 ,marginBottom:20, elevation:0}}>
               {/* <CardItem>
                 <Left>
                   <Thumbnail  source={item.image}/>
@@ -64,7 +64,7 @@ export default  class DemoCard extends Component {
 
 
               {/* The final one  */}
-              <CardItem header bordered style={{ backgroundColor: "#e2dada",height:80, borderTopLeftRadius: 30, borderTopRightRadius: 30}}>
+              <CardItem header style={{ backgroundColor: "#ffffff",height:80}}>
               <Left>
                 <Thumbnail source={item.image} />
                 <Body>
@@ -74,7 +74,7 @@ export default  class DemoCard extends Component {
               </Left>
               </CardItem>
               <CardItem  cardBody >
-                    <Image source={item.image} style={{height: 200, width: null, flex: 1}}/>
+                    <Image source={item.image} style={{height: 200, width: null, flex: 1, borderTopLeftRadius: 30, borderTopRightRadius: 30}}/>
               </CardItem>
               <CardItem header bordered style={{ backgroundColor:"#e2dada",height:50,  borderBottomLeftRadius:30,borderBottomRightRadius:30 }}>
               <Left>
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     //   flex:1,
       width:'100%',
       backgroundColor:'#FFFFFF',
-      marginTop: Constants.statusBarHeight,
+      marginTop: Constants.statusBarHeight*0.3,
     },
     // scrollView: {
     //   flex:1,
