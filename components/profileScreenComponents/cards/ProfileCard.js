@@ -4,7 +4,7 @@ import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Icon, Left
 import { StyleSheet } from 'react-native';
 import { AntDesign } from '@expo/vector-icons'; 
 import { createStackNavigator } from '@react-navigation/stack';
-import AddForm from '../../../screens/AddForm'
+// import AddForm from '../../../screens/AddForm'
 import { NavigationContainer } from '@react-navigation/native';
 
 
@@ -25,13 +25,9 @@ function More(props) {
 }
 
 function MyCard( props ) {
-  console.log(props);
   const item = props.extraData;
   const navigation = props.navigation;
-  // const item = props.item;
-  // console.log
-  // console.log(navigation)
-  // console.log(other)
+
   return (
     <Container>
       <Header style={styles.header} />
