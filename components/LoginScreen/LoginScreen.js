@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity,SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity,SafeAreaView,ImageBackground} from 'react-native';
 
 export default class LoginScreen extends React.Component {
   state={
@@ -10,14 +10,20 @@ export default class LoginScreen extends React.Component {
   //   Cluster1: { screen: Cluster1},
   //    Play: { screen: Play},
   //  });
+//   <ImageBackground  source={{uri: 'http://i.imgur.com/IGlBYaC.jpg'}} style={s.backgroundImage}>
+//         <View style={s.overlay}>
+//           <Text style={s.logo}>MAFDFDFLDSFKLSDKFSDFDSF</Text>
+//         </View>
+//       </ImageBackground >
    
   handleOnPress = () => {
     console.log('user login pressed')
   }
   render(){
-    return (
-      <SafeAreaView style={styles.container}>
-        <Text style={styles.logo}>Let's Dive in!</Text>
+    return (      
+    <ImageBackground source={require('../../assets/images/overlay.jpg')} style={styles.backgroundImage}>
+        <SafeAreaView style={styles.container}>
+        <Text style={styles.logo}></Text>
         <View style={styles.inputView} >
           <TextInput  
             style={styles.inputText}
@@ -48,6 +54,8 @@ export default class LoginScreen extends React.Component {
 
   
       </SafeAreaView>
+    </ImageBackground>
+      
     );
   }
 }
@@ -58,6 +66,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#003f5c',
     alignItems: 'center',
     justifyContent: 'center',
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    // backgroundColor: 'red',
+    opacity: 0.8
   },
   logo:{
     fontWeight:"bold",
@@ -67,7 +82,8 @@ const styles = StyleSheet.create({
   },
   inputView:{
     width:"80%",
-    backgroundColor:"#465881",
+    // backgroundColor:"#465881",
+    backgroundColor:"#ffffff",
     borderRadius:25,
     height:50,
     marginBottom:20,
@@ -104,5 +120,24 @@ const styles = StyleSheet.create({
   },
   loginText:{
     color:"white"
-  }
+  },
+  imageContainer: {
+    flex: 1,
+    width: null,
+    height: null,
+  },
+  backgroundImage: {
+    flex: 1,
+    width: null,
+    height: null,
+   },
+   overlay: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    backgroundColor: 'red',
+    opacity: 0.3
+    },
 });

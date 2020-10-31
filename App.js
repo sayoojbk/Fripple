@@ -13,6 +13,7 @@ import NotifScreen from './screens/NotifScreen';
 import EventScreenNav from './screens/EventScreenNav';
 import CompanyProfileScreen from './screens/CompanyProfileScreen'
 
+import LoginScreen from './components/LoginScreen/LoginScreen';
 
 const Tab = createBottomTabNavigator();
 export default class App extends Component {
@@ -84,6 +85,7 @@ export default class App extends Component {
           </Tab.Navigator>
           
         </NavigationContainer>
+        // <LoginScreen/>
       );
    }
 }
