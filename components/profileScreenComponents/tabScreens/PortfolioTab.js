@@ -21,7 +21,7 @@ export default function PortfolioTab() {
 
     <Carousel
       // ref={(c) => { this._carousel = c; }}
-      layout={'stack'} 
+      layout={'default'} 
       layoutCardOffset={18}
       data={data}
       renderItem={ProfileCard}

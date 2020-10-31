@@ -11,21 +11,21 @@ export default class TabsExample extends Component {
       <Container>
         <Header hasTabs style={styles.header} noShadow={true} />
         <Tabs noShadow={true} locked={true} style={styles.tabs} tabBarUnderlineStyle={styles.underlineStyle} >
-          <Tab heading="Portfolio" 
+          <Tab heading="Posts" 
 							 tabStyle={styles.tabs} 
 							 activeTabStyle={styles.activeTab} 
 							 textStyle={styles.inactiveText} 
 							 activeTextStyle={styles.activeText}>
             <PortfolioTab />
           </Tab>
-					<Tab heading="Collaborations" 
+					{/* <Tab heading="Events" 
 							 tabStyle={styles.tabs} 
 							 activeTabStyle={styles.activeTab} 
 							 textStyle={styles.inactiveText} 
 							 activeTextStyle={styles.activeText}>
             <CollabTab />
-          </Tab>
-					<Tab heading="Projects" 
+          </Tab> */}
+					<Tab heading="Analytics" 
 							 tabStyle={styles.tabs} 
 							 activeTabStyle={styles.activeTab} 
 							 textStyle={styles.inactiveText} 
