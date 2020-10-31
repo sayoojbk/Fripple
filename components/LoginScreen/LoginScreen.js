@@ -1,6 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity,SafeAreaView,ImageBackground} from 'react-native';
 
+import { Component } from 'react';
+import { Button } from 'react-native';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
+
 export default class LoginScreen extends React.Component {
   state={
     email:"",
@@ -18,6 +22,11 @@ export default class LoginScreen extends React.Component {
    
   handleOnPress = () => {
     console.log('user login pressed')
+    this.props.navigation.navigate('UserProfile')
+  }
+  directToCompany = () => {
+    console.log('user login pressed')
+    this.props.navigation.navigate('CompanyProfile')
   }
   render(){
     return (      
@@ -45,7 +54,7 @@ export default class LoginScreen extends React.Component {
         <TouchableOpacity onPress={this.handleOnPress} style={styles.loginBtn}>
           <Text style={styles.loginText}>User Login</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.loginBtn2}>
+        <TouchableOpacity onPress={this.directToCompany} style={styles.loginBtn2}>
           <Text style={styles.loginText}>Company Login</Text>
         </TouchableOpacity>
         <TouchableOpacity>
