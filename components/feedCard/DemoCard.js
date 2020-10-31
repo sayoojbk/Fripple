@@ -30,7 +30,7 @@ export default  class DemoCard extends Component {
         <Content style={{width:'100%', alignSelf:'center', paddingTop:'5%', elevation:0}}>
         {this.state.DATA.map((item, index) => {
           return(
-            <Card key={index} style={{ alignSelf:'center',width:'75%', borderRadius: 30 ,marginBottom:20, elevation:0}}>
+            <Card key={index} style={{ alignSelf:'center',width:'75%', borderRadius: 30 ,marginBottom:20, elevation:0, shadowColor:'#FFFFFF'}}>
               {/* <CardItem>
                 <Left>
                   <Thumbnail  source={item.image}/>
