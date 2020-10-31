@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     marginTop:20,
     width:'100%',
     // textAlign:'left',
-    marginLeft:50,
+    marginLeft:100,
     fontSize: 20,
     fontWeight: "bold"
   }
