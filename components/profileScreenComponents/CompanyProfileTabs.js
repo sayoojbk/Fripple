@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Tab, Tabs } from 'native-base';
 import { StyleSheet, View, Text, SafeAreaView } from "react-native";
-import PortfolioTab from './tabScreens/PortfolioTab';
+import PostTab from './tabScreens/CompanyPostTab';
 import CollabTab from './tabScreens/CollabTab';
-import ProjectsTab from './tabScreens/ProjectsTab';
+import AnalyticsTab from './tabScreens/CompanyAnalyticsTab';
 
 export default class TabsExample extends Component {
   render() {
@@ -11,26 +11,26 @@ export default class TabsExample extends Component {
       <Container>
         <Header hasTabs style={styles.header} noShadow={true} />
         <Tabs noShadow={true} locked={true} style={styles.tabs} tabBarUnderlineStyle={styles.underlineStyle} >
-          <Tab heading="Portfolio" 
+          <Tab heading="Posts" 
 							 tabStyle={styles.tabs} 
 							 activeTabStyle={styles.activeTab} 
 							 textStyle={styles.inactiveText} 
 							 activeTextStyle={styles.activeText}>
-            <PortfolioTab />
+            <PostTab />
           </Tab>
-					<Tab heading="Collaborations" 
+					{/* <Tab heading="Events" 
 							 tabStyle={styles.tabs} 
 							 activeTabStyle={styles.activeTab} 
 							 textStyle={styles.inactiveText} 
 							 activeTextStyle={styles.activeText}>
             <CollabTab />
-          </Tab>
-					<Tab heading="Projects" 
+          </Tab> */}
+					<Tab heading="Analytics" 
 							 tabStyle={styles.tabs} 
 							 activeTabStyle={styles.activeTab} 
 							 textStyle={styles.inactiveText} 
 							 activeTextStyle={styles.activeText}>
-            <ProjectsTab />
+            <AnalyticsTab />
           </Tab>
         </Tabs>
       </Container>

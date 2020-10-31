@@ -11,6 +11,7 @@ import SearchScreen from './screens/SearchScreen';
 import FeedScreen from './screens/FeedScreen';
 import NotifScreen from './screens/NotifScreen';
 import EventScreenNav from './screens/EventScreenNav';
+import CompanyProfileScreen from './screens/CompanyProfileScreen'
 
 import LoginScreen from './components/LoginScreen/LoginScreen';
 
@@ -78,7 +79,9 @@ export default class App extends Component {
             <Tab.Screen name="Search" component={ SearchScreen } />
             <Tab.Screen name="Events" component={ EventScreenNav } />
             <Tab.Screen name="Notifications" component={ NotifScreen } />
-            <Tab.Screen name="Profile" component={ ProfileScreen } />
+            {/* TODO: Add here. Login redirect */}
+            {/* <Tab.Screen name="Profile" component={ ProfileScreen } /> */}
+            <Tab.Screen name="Profile" component={ CompanyProfileScreen } />
           </Tab.Navigator>
           
         </NavigationContainer>

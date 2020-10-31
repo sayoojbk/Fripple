@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, View, TextInput, Text } from "react-native";
+import { StyleSheet, View, TextInput, Text, TouchableOpacity } from "react-native";
 import Svg, { Ellipse } from "react-native-svg";
 import EntypoIcon from "react-native-vector-icons/Entypo";
 import FontAwesomeIcon from "react-native-vector-icons/FontAwesome";
@@ -18,7 +18,7 @@ function AddPost(props) {
           <View style={styles.group7}>
             <View style={styles.group2Row}>
               <View style={styles.group2}>
-                <View style={styles.ellipse3Stack}>
+                <TouchableOpacity style={styles.ellipse3Stack}>
                   <Svg viewBox="0 0 45.51 45.51" style={styles.ellipse3}>
                     <Ellipse
                       strokeWidth={0}
@@ -30,10 +30,10 @@ function AddPost(props) {
                     ></Ellipse>
                   </Svg>
                   <EntypoIcon name="camera" style={styles.icon3}></EntypoIcon>
-                </View>
+                </TouchableOpacity>
               </View>
               <View style={styles.group3}>
-                <View style={styles.ellipse4Stack}>
+                <TouchableOpacity style={styles.ellipse4Stack}>
                   <Svg viewBox="0 0 45.51 45.51" style={styles.ellipse4}>
                     <Ellipse
                       strokeWidth={0}
@@ -48,10 +48,10 @@ function AddPost(props) {
                     name="attachment"
                     style={styles.icon4}
                   ></EntypoIcon>
-                </View>
+                </TouchableOpacity>
               </View>
               <View style={styles.group4}>
-                <View style={styles.ellipse5Stack}>
+                <TouchableOpacity style={styles.ellipse5Stack}>
                   <Svg viewBox="0 0 45.51 45.51" style={styles.ellipse5}>
                     <Ellipse
                       strokeWidth={0}
@@ -66,10 +66,10 @@ function AddPost(props) {
                     name="location-pin"
                     style={styles.icon5}
                   ></EntypoIcon>
-                </View>
+                </TouchableOpacity>
               </View>
               <View style={styles.group5}>
-                <View style={styles.rect3}>
+                <TouchableOpacity style={styles.rect3}>
                   <View style={styles.icon6Row}>
                     <FontAwesomeIcon
                       name="tag"
@@ -77,12 +77,12 @@ function AddPost(props) {
                     ></FontAwesomeIcon>
                     <Text style={styles.tags}>Tags</Text>
                   </View>
-                </View>
+                </TouchableOpacity>
               </View>
             </View>
           </View>
           <View style={styles.group6}>
-            <View style={styles.rect4}>
+            <TouchableOpacity style={styles.rect4}>
               <View style={styles.icon7Row}>
                 <MaterialCommunityIconsIcon
                   name="circle-edit-outline"
@@ -90,7 +90,7 @@ function AddPost(props) {
                 ></MaterialCommunityIconsIcon>
                 <Text style={styles.post}>Post!</Text>
               </View>
-            </View>
+            </TouchableOpacity>
           </View>
         </View>
         <View style={styles.group}>

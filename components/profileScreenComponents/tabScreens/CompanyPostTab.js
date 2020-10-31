@@ -16,7 +16,7 @@ const data = [{
   username: 'Sarah Parker'
 }]
 
-export default function PortfolioTab() {
+export default function CompanyPostTab() {
   return (
 
     <Carousel

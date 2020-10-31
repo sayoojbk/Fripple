@@ -116,7 +116,10 @@ const styles = StyleSheet.create({
     margin: 20,
   },
   card: {
+    top: 5,
     borderRadius: 30,
+    width: 300,
+    alignSelf: 'center',
   },
   imagePanel: {
     borderTopLeftRadius: 30,
@@ -125,6 +128,7 @@ const styles = StyleSheet.create({
   bottomPanel: {
     borderBottomLeftRadius: 30,
     borderBottomRightRadius: 30,
+    height: 60,
     backgroundColor: "#726969"
   },
   textStyle: {
