@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, View, Text, SafeAreaView } from "react-native";
+import { StyleSheet, View, Text, SafeAreaView, Image } from "react-native";
 import Svg, { Ellipse } from "react-native-svg";
 import { Ionicons } from '@expo/vector-icons';
 import CompanyProfileTabs from "../components/profileScreenComponents/CompanyProfileTabs"
@@ -11,27 +11,15 @@ function ProfileScreen(props) {
         <View style={styles.profileHeader}>
           <View style={styles.followers500Row}>
             <Text style={styles.followers500}>Followers{"\n"}500</Text>
-            <Svg viewBox="0 0 82.45 82.45" style={styles.ellipse}>
-              <Ellipse
-                stroke="rgba(230, 230, 230,1)"
-                strokeWidth={0}
-                fill="rgba(230, 230, 230,1)"
-                cx={41}
-                cy={41}
-                rx={41}
-                ry={41}
-              ></Ellipse>
-            </Svg>
+            <Image
+                source={require("../assets/images/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg")}
+                resizeMode="contain"
+                style={styles.image}
+              ></Image>
             <Text style={styles.following500}>Following{"\n"}500</Text>
           </View>
           <Text style={styles.sarahParkar}>Sarah Parkar</Text>
           <Text style={styles.designer}>Designer</Text>
-          <View style={styles.rect2}>
-            <Ionicons name="md-flower" size={32} color="#5E5757" style={styles.dkIcon} />
-            <Text style={styles.dkCount}>340</Text>
-            <Ionicons name="md-star" size={32} color="#5E5757" style={styles.ikIcon} />
-            <Text style={styles.ikCount}>220</Text>
-          </View>
         </View>
         <View style={styles.bottomHalf}>
           <CompanyProfileTabs />
@@ -135,6 +123,12 @@ const styles = StyleSheet.create({
     width: '100%',
     top: '35%',
     height: '65%'
+  },
+  image: {
+    width: 90,
+    height: 90,
+    marginLeft: '20%',
+    borderRadius: 500
   }
 });
 
