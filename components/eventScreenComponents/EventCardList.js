@@ -8,14 +8,14 @@ import EventCard from './EventCard';
 const CARDS =  [
 	{
 		image: {
-			uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg'
+			uri: 'https://www.linkpicture.com/q/LPic5f9e84947006a1233657452.jpg'
 		},
 		height: height * 0.7,
 		renderItem: ({ item }) => <EventCard />
 	},
 	{
 		image: {
-			uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg'
+			uri: 'https://www.linkpicture.com/q/LPic5f9e854208cfa646116451.jpg'
 		},
 		height: height * 0.7,
 		renderItem: ({ item }) => <EventCard />
@@ -67,10 +67,12 @@ export default class Vertical extends React.Component {
             }}
           >
             <Text style={{ color: "rgba(0, 0, 0, 0.7)", fontSize: 18 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. 
+              Show your style !!
+              Show your style !!
+              Show your style !!
+              Show your style !!
+              Show your style !!
+              Show your style !!
             </Text>
 
           </View>
