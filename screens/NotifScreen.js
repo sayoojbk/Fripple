@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1
   },
   lucyLikedYourPost: {
-    fontFamily: "roboto-regular",
+    fontFamily: "Roboto",
     color: "#121212",
     fontSize: 16,
     marginTop: 20,
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1
   },
   notif2text: {
-    fontFamily: "roboto-regular",
+    fontFamily: "Roboto",
     color: "#121212",
     fontSize: 16,
     marginTop: 20,
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1
   },
   text3: {
-    fontFamily: "roboto-regular",
+    fontFamily: "Roboto",
     color: "#121212",
     fontSize: 16,
     marginTop: 20,
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1
   },
   text4: {
-    fontFamily: "roboto-regular",
+    fontFamily: "Roboto",
     color: "#121212",
     fontSize: 16,
     marginTop: 20,
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1
   },
   text5: {
-    fontFamily: "roboto-regular",
+    fontFamily: "Roboto",
     color: "#121212",
     fontSize: 16,
     marginTop: 20,
@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
     shadowRadius: 0
   },
   notifications: {
-    fontFamily: "roboto-regular",
+    fontFamily: "Roboto",
     color: "rgba(94,87,87,1)",
     fontSize: 20,
     marginTop: 19,
