@@ -42,8 +42,10 @@ function MyCard( props ) {
             <CardItem style={styles.bottomPanel}>
               <Left>
                 <Button transparent>
-                  <FontAwesome5 name="fire-alt" size={24} color="#E2DADA" />
-                  <Text style={styles.textStyle}>{item.fireCount}</Text>
+                  <FontAwesome5 name="heart" size={24} color="#E2DADA" />
+                  <Text style={styles.textStyle}>{item.likes}</Text>
+                  <FontAwesome5 name="comment" size={24} color="#E2DADA" />
+                  <Text style={styles.textStyle}>{item.comments}</Text>
                 </Button>
               </Left>
               <Right>

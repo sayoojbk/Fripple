@@ -1,19 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView } from 'react-native';
-import ProfileCard from '../cards/ProfileCard'
+import ProfileCard from '../cards/CompanyProfileCard'
 import Carousel from 'react-native-snap-carousel';
 
 const data = [{
-  uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg',
+  uri: 'https://www.linkpicture.com/q/danilo-capece-NoVnXXmDNi0-unsplash.jpg',
   designation: 'Designer',
-  title: "First post",
-  username: 'Sarah Parker'
+  title: "Wear the best",
+  likes: '13.5k',
+  comments: 345,
 },{
-  uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg',
+  uri: 'https://www.linkpicture.com/q/alexander-rotker-l8p1aWZqHvE-unsplash.jpg',
   designation: 'Designer',
-  title: "Second post",
-  username: 'Sarah Parker'
+  title: "Blue Heaven",
+  likes: '9.5k',
+  comments: 321,
 }]
 
 export default function CompanyPostTab() {

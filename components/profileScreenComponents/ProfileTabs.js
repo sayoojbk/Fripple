@@ -18,14 +18,14 @@ export default class TabsExample extends Component {
 							 activeTextStyle={styles.activeText}>
             <PortfolioTab />
           </Tab>
-					<Tab heading="Collaborations" 
+					<Tab heading="Projects" 
 							 tabStyle={styles.tabs} 
 							 activeTabStyle={styles.activeTab} 
 							 textStyle={styles.inactiveText} 
 							 activeTextStyle={styles.activeText}>
             <CollabTab />
           </Tab>
-					<Tab heading="Projects" 
+					<Tab heading="Posts" 
 							 tabStyle={styles.tabs} 
 							 activeTabStyle={styles.activeTab} 
 							 textStyle={styles.inactiveText} 

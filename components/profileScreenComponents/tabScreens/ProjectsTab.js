@@ -6,15 +6,19 @@ import Carousel from 'react-native-snap-carousel';
 
 
 const data = [{
-  uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg',
+  uri: 'https://www.linkpicture.com/q/mason-jones-bIIP4igsg1I-unsplash.jpg',
   designation: 'Designer',
-  title: "First post",
-  username: 'Sarah Parker'
+  title: "Simplicity",
+  username: 'Sarah Parker',
+  fireCount: 10,
+  text: "Parturient curabitur consectetur a suspendisse metus suspendisse a a et ullamcorper maecenas curabitur parturient blandit enim tellus consectetur pharetra natoque adipiscing a rhoncus maecenas massa fringilla.Gravida ullamcorper suspendisse mi condimentum ligula tincidunt ut ut facilisi adipiscing pulvinar a a sed ante congue turpis class condimentum cubilia.Eu tellus dapibus nisl eros scelerisque fringilla dolor suspendisse parturient eros habitasse phasellus euismod a fermentum porttitor a taciti sapien euismod augue parturient dapibus conubia scelerisque quisque at non.Nulla sociosqu parturient a."
 },{
-  uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg',
+  uri: 'https://www.linkpicture.com/q/vicky-cheng-4mLKBKMPoHo-unsplash.jpg',
   designation: 'Designer',
-  title: "Second post",
-  username: 'Sarah Parker'
+  title: "Floral Beauty",
+  username: 'Sarah Parker',
+  fireCount: 34,
+  text: "Parturient curabitur consectetur a suspendisse metus suspendisse a a et ullamcorper maecenas curabitur parturient blandit enim tellus consectetur pharetra natoque adipiscing a rhoncus maecenas massa fringilla.Gravida ullamcorper suspendisse mi condimentum ligula tincidunt ut ut facilisi adipiscing pulvinar a a sed ante congue turpis class condimentum cubilia.Eu tellus dapibus nisl eros scelerisque fringilla dolor suspendisse parturient eros habitasse phasellus euismod a fermentum porttitor a taciti sapien euismod augue parturient dapibus conubia scelerisque quisque at non.Nulla sociosqu parturient a."
 }]
 
 export default function ProjectsTab() {

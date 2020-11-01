@@ -12,14 +12,13 @@ function ProfileScreen(props) {
           <View style={styles.followers500Row}>
             <Text style={styles.followers500}>Followers{"\n"}500</Text>
             <Image
-                source={require("../assets/images/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg")}
-                resizeMode="contain"
+                source={{uri: "https://www.linkpicture.com/q/revolt-unsplash.jpg"}}
                 style={styles.image}
               ></Image>
             <Text style={styles.following500}>Following{"\n"}500</Text>
           </View>
-          <Text style={styles.sarahParkar}>Sarah Parkar</Text>
-          <Text style={styles.designer}>Designer</Text>
+          <Text style={styles.sarahParkar}>Nike Armenia</Text>
+          <Text style={styles.designer}>Just Do it!</Text>
         </View>
         <View style={styles.bottomHalf}>
           <CompanyProfileTabs />
@@ -82,7 +81,7 @@ const styles = StyleSheet.create({
     color: "rgba(179,170,170,1)",
     fontSize: 15,
     marginTop: '1%',
-    marginLeft: '44%'
+    marginLeft: '42%'
   },
   rect2: {
     top: '92%',
@@ -122,7 +121,10 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',
     width: '100%',
     top: '35%',
-    height: '65%'
+    height: '65%',
+    shadowColor: 'black',
+    shadowRadius: 3,
+    zIndex: 20
   },
   image: {
     width: 90,
