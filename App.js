@@ -46,17 +46,12 @@ const AppNavigator = createStackNavigator(
     CompanyProfile: Company,
   },
   {
-    defaultNavigationOptions: {
-      headerTintColor: '#fff',
-      headerStyle: {
-        backgroundColor: '#000',
-        height:0
-      },
-    },
+    headerMode: 'none',
     navigationOptions: {
-      tabBarLabel: 'Home!',
-    },
+      headerVisible: false,
+    }
   }
+  
 );
 
 const AppContainer = createAppContainer( AppNavigator );
