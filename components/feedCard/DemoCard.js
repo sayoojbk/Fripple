@@ -9,12 +9,12 @@ export default  class DemoCard extends Component {
       super(props);
       this.state = {
         DATA : [
-          { id: 1, username:'inzi', title: 'Lorem ipsum dolor sit amet, everti rationibus his cu', views:'200', comments:'9', published:'4h ago', image: {uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg'} },
+          { id: 1, username:'insi.yeaah', title: 'Fashion Blogger , Vogue', views:'200', comments:'9', published:'4h ago', image: {uri: 'https://www.linkpicture.com/q/LPic5f9e863ec89f81783236743.jpg'} },
 
-          { id: 2, username:'inzi', title: 'Lorem ipsum dolor sit amet, everti rationibus his ', Views:'700', comments:'16', published:'9h ago', image: {uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg'} },
+          { id: 2, username:'Sarah', title: 'Fashion Designer, H&M', Views:'700', comments:'16', published:'9h ago', image: {uri: 'https://www.linkpicture.com/q/LPic5f9e86e60cf0b963260611.jpg'} },
 
-          { id: 3, username:'inzi', title: 'Lorem ipsum dolor sit amet, everti rationibus hi', Views:'698', comments:'8', published:'14h ago', image: {uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg'} },
-          { id: 4, username:'inzi', title: 'Lorem ipsum dolor sit amet, everti rationibus hi', Views:'698', comments:'8', published:'14h ago', image: {uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg'} },
+          { id: 3, username:'Lorenzo', title: 'Fashion Model', Views:'698', comments:'8', published:'14h ago', image: {uri: 'https://www.linkpicture.com/q/LPic5f9e87111f2121944458716.jpg'} },
+          { id: 4, username:'Jessica Alba', title: 'Influencer', Views:'698', comments:'8', published:'14h ago', image: {uri: 'https://www.linkpicture.com/q/LPic5f9e877c9df1f1280774835.jpg'} },
         ],
       }
   }
@@ -69,7 +69,7 @@ export default  class DemoCard extends Component {
                 <Thumbnail source={item.image} />
                 <Body>
                   <Text>{item.username}</Text>
-                  <Text note>GeekyAnts</Text>
+                  <Text note>{item.title}</Text>
                 </Body>
               </Left>
               </CardItem>
@@ -79,18 +79,18 @@ export default  class DemoCard extends Component {
               <CardItem header bordered style={{ backgroundColor:"#e2dada",height:50,  borderBottomLeftRadius:30,borderBottomRightRadius:30 }}>
               <Left>
                 <Button transparent >
-                  <Icon active name="heart" />
-                  <Text>12</Text>
+                  <Icon style={{ color: '#726969'}} active name="heart" />
+                  <Text style={{ color: '#726969'}}>{item.views}</Text>
                 </Button>
               </Left>
               <Left>
                 <Button transparent>
-                  <Icon active name="share" />
-                  <Text >4</Text>
+                  <Icon style={{ color: '#726969'}} active name="share" />
+                  <Text style={{ color: '#726969'}}>{item.comments}</Text>
                 </Button>
               </Left>
               <Right>
-                <Text>11h ago</Text>
+              <Text style={{ color: '#726969'}}>{item.published}</Text>
               </Right>
               </CardItem>
                 
