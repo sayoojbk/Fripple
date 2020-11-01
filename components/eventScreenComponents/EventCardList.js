@@ -67,12 +67,18 @@ export default class Vertical extends React.Component {
             }}
           >
             <Text style={{ color: "rgba(0, 0, 0, 0.7)", fontSize: 18 }}>
-              Show your style !!
-              Show your style !!
-              Show your style !!
-              Show your style !!
-              Show your style !!
-              Show your style !!
+              ------
+              ----------
+              ---------
+              ----------
+              ---------
+              ------------------------
+              -
+              
+              FILA FASHION WEEK 
+              ---------------------------------
+              Show your creative touch with different ways you could flaunt our bumblebee sweat shirts.
+              The Winner of this event stand a chance to be featured on our page and perform gigs with our creative heads.
             </Text>
 
           </View>

@@ -79,18 +79,18 @@ export default  class DemoCard extends Component {
               <CardItem header bordered style={{ backgroundColor:"#e2dada",height:50,  borderBottomLeftRadius:30,borderBottomRightRadius:30 }}>
               <Left>
                 <Button transparent >
-                  <Icon active name="heart" />
-                  <Text>12</Text>
+                  <Icon style={{ color: '#726969'}} active name="heart" />
+                  <Text style={{ color: '#726969'}}>{item.views}</Text>
                 </Button>
               </Left>
               <Left>
                 <Button transparent>
-                  <Icon active name="share" />
-                  <Text >4</Text>
+                  <Icon style={{ color: '#726969'}} active name="share" />
+                  <Text style={{ color: '#726969'}}>{item.comments}</Text>
                 </Button>
               </Left>
               <Right>
-                <Text>11h ago</Text>
+              <Text style={{ color: '#726969'}}>{item.published}</Text>
               </Right>
               </CardItem>
                 
