@@ -19,7 +19,7 @@ export default () => (
           color: "rgba(0, 0, 0, 0.5)"
         }}
       >
-        CREATIVE APPS
+        FILA FASHION WEEK 
       </Text>
       <Text
         style={{
@@ -29,7 +29,7 @@ export default () => (
           color: "rgb(51, 51, 51)"
         }}
       >
-        Enhance your artistic skills
+        Flaunt the limited edition bumblebee SweatShirts
       </Text>
     </View>
   </View>

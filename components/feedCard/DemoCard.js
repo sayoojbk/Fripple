@@ -11,10 +11,10 @@ export default  class DemoCard extends Component {
         DATA : [
           { id: 1, username:'insi.yeaah', title: 'Fashion Blogger , Vogue', views:'200', comments:'9', published:'4h ago', image: {uri: 'https://www.linkpicture.com/q/LPic5f9e863ec89f81783236743.jpg'} },
 
-          { id: 2, username:'Sarah', title: 'Fashion Designer, H&M', Views:'700', comments:'16', published:'9h ago', image: {uri: 'https://www.linkpicture.com/q/LPic5f9e86e60cf0b963260611.jpg'} },
+          { id: 2, username:'Sarah', title: 'Fashion Designer, H&M', views:'700', comments:'16', published:'9h ago', image: {uri: 'https://www.linkpicture.com/q/LPic5f9e86e60cf0b963260611.jpg'} },
 
-          { id: 3, username:'Lorenzo', title: 'Fashion Model', Views:'698', comments:'8', published:'14h ago', image: {uri: 'https://www.linkpicture.com/q/LPic5f9e87111f2121944458716.jpg'} },
-          { id: 4, username:'Jessica Alba', title: 'Influencer', Views:'698', comments:'8', published:'14h ago', image: {uri: 'https://www.linkpicture.com/q/LPic5f9e877c9df1f1280774835.jpg'} },
+          { id: 3, username:'Lorenzo', title: 'Fashion Model', views:'698', comments:'8', published:'14h ago', image: {uri: 'https://www.linkpicture.com/q/LPic5f9e87111f2121944458716.jpg'} },
+          { id: 4, username:'Jessica Alba', title: 'Influencer', views:'698', comments:'8', published:'14h ago', image: {uri: 'https://www.linkpicture.com/q/LPic5f9e877c9df1f1280774835.jpg'} },
         ],
       }
   }
